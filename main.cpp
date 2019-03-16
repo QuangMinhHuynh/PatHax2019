@@ -21,7 +21,7 @@ int main() {
     //string inp;
 
     int size = 14;
-    string commands [size] = {"help", "add", "remove", "complete", "info", "date", "priority", "import", "export", "name", "quit", "removeAll", "removeThese", "completeThese"};
+    string commands [size] = {"help", "add", "remove", "complete", "info", "date", "priority", "load", "save", "name", "quit", "removeAll", "removeThese", "completeThese"};
 
     int cmd = -1;
     string inp;
@@ -68,10 +68,11 @@ int main() {
           t.setPriority();
           break;
         case 7:
-          t.importTasks();
+          t.load();
+          update = 0;
           break;
         case 8:
-          t.exportTasks();
+          t.save();
           break;
         case 9:
           t.changeName();

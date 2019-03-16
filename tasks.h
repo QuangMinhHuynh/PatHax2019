@@ -26,6 +26,7 @@ public:
   ~TaskSet();
 
   void addTask();
+  void addTask(bool complete, string info, string date, int priority);
   void removeTask();
 
   void toggleComplete();
@@ -35,8 +36,8 @@ public:
 
   void displayTasks();
 
-  void importTasks();
-  void exportTasks();
+  void load();
+  void save();
 
   void changeName();
   string getName();

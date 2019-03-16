@@ -5,8 +5,7 @@ TaskSet::TaskSet() {}
 TaskSet::~TaskSet() {}
 
 void TaskSet::addTask() {
-  string info;
-  string date;
+  string info, date;
   int priority;
 
   cout << "Description: ";
@@ -18,6 +17,16 @@ void TaskSet::addTask() {
   cout << endl;
 
   Task temp;
+  temp._info = info;
+  temp._date = date;
+  temp._priority = priority;
+
+  tasks.push_back(temp);
+}
+void TaskSet::addTask(bool complete, string info, string date, int priority) {
+
+  Task temp;
+  temp._complete = complete;
   temp._info = info;
   temp._date = date;
   temp._priority = priority;
@@ -81,11 +90,30 @@ void TaskSet::displayTasks() {
   cout << endl;
 }
 
-void TaskSet::importTasks() {
+void TaskSet::load() {
+  bool complete;
+  string info, date;
+  int priority;
 
+  string filename = "saveFile.txt";
+  ifstream fi(filename);
+  removeAll();
+  while(!fi.eof()) {
+    fi >> complete >> info >> date >> priority;
+    addTask(complete, info, date, priority);
+  }
+  fi.close();
+  tasks.pop_back();
 }
-void TaskSet::exportTasks() {
-
+void TaskSet::save() {
+  string filename = "saveFile.txt";
+  ofstream fo(filename);
+  for (int i = 0; i < tasks.size(); i++) {
+    fo << tasks[i]._complete << " " << tasks[i]._info << " "
+         << tasks[i]._date << " " << tasks[i]._priority << endl;
+    fo.close();
+  }
+  cout << "Saved" << endl;
 }
 
 void TaskSet::changeName() {
@@ -101,7 +129,7 @@ string TaskSet::getName() {
 
 void TaskSet::removeAll() {
   char inp;
-  cout << "Are you sure you want to remove all tasks? (Y/N)" << endl;
+  cout << "Do you want to remove all tasks? (Y/N)" << endl;
   cin >> inp;
 
   if (inp == 'Y') { tasks.clear(); }
