@@ -45,9 +45,9 @@ public class DayViewActivity extends AppCompatActivity {
         daysOfWeek.put(6,"Friday");
         daysOfWeek.put(7,"Saturday");
 
-
+        //test
         text.setText(Long.toString(unixTimeDay));
-        text.setText(daysOfWeek.get(unixTimeDay));
+        text.setText(daysOfWeek.get(1));
 
     }
 }
