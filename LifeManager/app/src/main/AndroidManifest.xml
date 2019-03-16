@@ -12,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".AddEventActivity"></activity>
         <activity android:name=".ScheduleViewActivity" />
         <activity android:name=".TasksActivity" />
         <activity android:name=".MonthViewActivity" />
@@ -25,7 +26,5 @@
             </intent-filter>
         </activity>
     </application>
-
-
 
 </manifest>
