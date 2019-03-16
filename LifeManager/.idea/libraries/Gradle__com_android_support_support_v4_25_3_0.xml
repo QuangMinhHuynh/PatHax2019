@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.support:support-v4-25.3.0">
+    <CLASSES>
+<<<<<<< Updated upstream:LifeManager/.idea/libraries/Gradle__com_android_support_support_v4_25_3_0_aar.xml
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.0.aar/9b38a1a32156c00aba62696a72333334/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.0.aar/9b38a1a32156c00aba62696a72333334/res" />
+=======
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.0.aar/02409fcab00106d7628ac1fdddfc7691/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.0.aar/02409fcab00106d7628ac1fdddfc7691/jars/classes.jar!/" />
+>>>>>>> Stashed changes:LifeManager/.idea/libraries/Gradle__com_android_support_support_v4_25_3_0.xml
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
