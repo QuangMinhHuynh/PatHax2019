@@ -34,8 +34,7 @@ public class MainActivity extends AppCompatActivity {
         Button monthViewBtn = (Button) findViewById(R.id.monthViewBtn);
         Button scheduleViewBtn = (Button) findViewById(R.id.scheduleViewBtn);
         Button tasksViewBtn = (Button) findViewById(R.id.tasksViewBtn);
-
-        editText = (EditText) findViewById(R.id.editText);
+        Button addEventBtn = (Button) findViewById(R.id.addEventBtn);
 
         dayViewBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -62,6 +61,13 @@ public class MainActivity extends AppCompatActivity {
         });
 
         tasksViewBtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, TasksActivity.class));
+
+            }
+        });
+
+        addEventBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, AddEventActivity.class));
 
