@@ -6,4 +6,62 @@
     android:layout_height="match_parent"
     tools:context=".ScheduleViewActivity">
 
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="384dp"
+        android:layout_height="461dp"
+
+        android:background="#2C2F33"
+
+
+        android:divider="#99AAB5"
+        android:dividerHeight="1.2dp"
+        android:padding="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></ListView>
+
+    <TextView
+        android:id="@+id/yearView"
+        android:layout_width="103dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/listView"
+        app:layout_constraintEnd_toStartOf="@+id/forwardYearButton"
+        app:layout_constraintStart_toEndOf="@+id/backYearButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/backYearButton"
+        android:layout_width="133dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Previous"
+        app:layout_constraintBottom_toTopOf="@+id/listView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/forwardYearButton"
+        android:layout_width="135dp"
+        android:layout_height="94dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:text="Next"
+        app:layout_constraintBottom_toTopOf="@+id/listView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
 </android.support.constraint.ConstraintLayout>
