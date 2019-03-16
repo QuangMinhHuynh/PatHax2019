@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
         Button tasksViewBtn = (Button) findViewById(R.id.tasksViewBtn);
 
         editText = (EditText) findViewById(R.id.editText);
-        checkExternalMedia();
         writeToSDFile();
 
         dayViewBtn.setOnClickListener(new View.OnClickListener() {
@@ -67,27 +66,11 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //startActivity(new Intent(MainActivity.this, TasksActivity.class));
 
-
-                checkExternalMedia();
                 writeToSDFile();
             }
         });
 
 
-    }
-
-    private void checkExternalMedia(){
-        boolean mExternalStorageAvailable = false;
-        boolean mExternalStorageWriteable = false;
-        String state = Environment.getExternalStorageState();
-        if (Environment.MEDIA_MOUNTED.equals(state)) {
-            mExternalStorageAvailable = mExternalStorageWriteable = true;
-        } else if (Environment.MEDIA_MOUNTED_READ_ONLY.equals(state)) {
-            mExternalStorageAvailable = true;
-            mExternalStorageWriteable = false;
-        } else {
-            mExternalStorageAvailable = mExternalStorageWriteable = false;
-        }
     }
 
     private void writeToSDFile(){
