@@ -1,8 +1,5 @@
 PatHax2019
 Aaron Woodhouse
-c++ file of tasking
 
-Needs to be converted into Java for implementation
-
-is bash shell, run "make"
-if make doesn't need to be done, run the file with "./tasks"
+C++ to Java conversion needs to be finished, then implemented into the app
+Tasker manages tasks in a checklist like format
