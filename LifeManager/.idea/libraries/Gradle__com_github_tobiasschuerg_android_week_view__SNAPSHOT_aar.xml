@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.tobiasschuerg:android-week-view:-SNAPSHOT@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-week-view--SNAPSHOT.aar/2073e78cbeaa1601f814583cae667efb/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-week-view--SNAPSHOT.aar/2073e78cbeaa1601f814583cae667efb/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.tobiasschuerg/android-week-view/-SNAPSHOT/4eaa33e29b7c1894ed4f58ef766b2c5680c17188/android-week-view--SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
