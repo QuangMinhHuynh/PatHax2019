@@ -5,4 +5,8 @@
     <string name="monthViewBtn">Month</string>
     <string name="scheduleViewBtn">Schedule</string>
     <string name="tasksViewBtn">Tasks</string>
+    <string name="saveBtn">Save</string>
+    <string name="date_selector">Date Selector</string>
+    <string name="title">Title</string>
+    <string name="note">Note</string>
 </resources>

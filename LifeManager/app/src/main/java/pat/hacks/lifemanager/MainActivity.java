@@ -36,8 +36,6 @@ public class MainActivity extends AppCompatActivity {
         Button tasksViewBtn = (Button) findViewById(R.id.tasksViewBtn);
 
         editText = (EditText) findViewById(R.id.editText);
-        checkExternalMedia();
-        writeToSDFile();
 
         dayViewBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -65,49 +63,11 @@ public class MainActivity extends AppCompatActivity {
 
         tasksViewBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                //startActivity(new Intent(MainActivity.this, TasksActivity.class));
+                startActivity(new Intent(MainActivity.this, AddEventActivity.class));
 
-
-                checkExternalMedia();
-                writeToSDFile();
             }
         });
 
 
-    }
-
-    private void checkExternalMedia(){
-        boolean mExternalStorageAvailable = false;
-        boolean mExternalStorageWriteable = false;
-        String state = Environment.getExternalStorageState();
-        if (Environment.MEDIA_MOUNTED.equals(state)) {
-            mExternalStorageAvailable = mExternalStorageWriteable = true;
-        } else if (Environment.MEDIA_MOUNTED_READ_ONLY.equals(state)) {
-            mExternalStorageAvailable = true;
-            mExternalStorageWriteable = false;
-        } else {
-            mExternalStorageAvailable = mExternalStorageWriteable = false;
-        }
-    }
-
-    private void writeToSDFile(){
-        File dir = new File (Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS) + "/lifemanager");
-        dir.mkdirs();
-        File file = new File(dir, "hello.txt");
-
-        String text = editText.getText().toString();
-
-        try {
-            FileOutputStream f = new FileOutputStream(file);
-            f.write(text.getBytes());
-            f.flush();
-            f.close();
-            Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG).show();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-            Log.i("FNF", "******* File not found. Did you add a WRITE_EXTERNAL_STORAGE permission to the   manifest?");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 }
