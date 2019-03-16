@@ -41,10 +41,9 @@ public:
   void changeName();
   string getName();
 
-  // clear all tasks
-  // delete list of ids
-  // complete list of ids
-
+  void removeAll();
+  void removeThese();
+  void completeThese();
 
 };
 

@@ -20,8 +20,8 @@ int main() {
 
     //string inp;
 
-    int size = 11;
-    string commands [size] = {"help", "add", "remove", "complete", "info", "date", "priority", "import", "export", "name", "quit"};
+    int size = 14;
+    string commands [size] = {"help", "add", "remove", "complete", "info", "date", "priority", "import", "export", "name", "quit", "removeAll", "removeThese", "completeThese"};
 
     int cmd = -1;
     string inp;
@@ -38,12 +38,15 @@ int main() {
       else           { cout << "Please enter a valid action..." << endl; }
     }
 
+    cout << endl;
+
     if (!exit) {
       switch (cmd) {
         case 0:
           cout << "\nhelp, " << "add, " << "remove, " << "complete, "
                << "info, " << "date, " << "priority, " << "import, "
-               << "export, " << "name, " << "quit\n\n";
+               << "export, " << "name, " << "quit, " << "removeAll, "
+               << "removeThese, " << "completeThese\n\n";
                update = 0;
           break;
         case 1:
@@ -72,6 +75,17 @@ int main() {
           break;
         case 9:
           t.changeName();
+          break;
+        case 10:
+          break; // quit
+        case 11:
+          t.removeAll();
+          break;
+        case 12:
+          t.removeThese();
+          break;
+        case 13:
+          t.completeThese();
           break;
         default:
           cout << "Please enter a valid action..." << endl;

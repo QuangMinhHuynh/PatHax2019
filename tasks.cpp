@@ -76,8 +76,9 @@ void TaskSet::displayTasks() {
   for (int i = tasks.size() - 1; i >= 0; i--) {
     cout << tasks[i]._complete << " " << tasks[i]._info << " "
          << tasks[i]._date << " " << tasks[i]._priority  << " " << i
-         << endl << endl;
+         << endl;
   }
+  cout << endl;
 }
 
 void TaskSet::importTasks() {
@@ -96,4 +97,46 @@ void TaskSet::changeName() {
 }
 string TaskSet::getName() {
   return _name;
+}
+
+void TaskSet::removeAll() {
+  char inp;
+  cout << "Are you sure you want to remove all tasks? (Y/N)" << endl;
+  cin >> inp;
+
+  if (inp == 'Y') { tasks.clear(); }
+  else            { cout << "Cancelling..." << endl; }
+
+}
+void TaskSet::removeThese() {
+  int id;
+  vector<int> ids;
+
+  cout << "IDs of tasks to remove (-1 to end): " << endl;
+  while(true){
+    cin >> id;
+    if (id == -1) { break; }
+    ids.push_back(id);
+  }
+
+  for (int i = 0; i < ids.size(); i++) {
+    tasks.erase(tasks.begin()+ids[i]);
+  }
+
+}
+void TaskSet::completeThese() {
+  int id;
+  vector<int> ids;
+  cout << "IDs of tasks to complete (-1 to end): " << endl;
+  while(true){
+    cin >> id;
+    if (id == -1) { break; }
+    ids.push_back(id);
+  }
+
+  for (int i = 0; i < ids.size(); i++) {
+    if(tasks[ids[i]]._complete) { tasks[ids[i]]._complete = 0; }
+    else                    { tasks[ids[i]]._complete = 1; }
+  }
+  cout << endl;
 }
