@@ -12,9 +12,9 @@
         <activity android:name=".ScheduleViewActivity"></activity>
         <activity android:name=".TasksActivity" />
         <activity android:name=".MonthViewActivity" />
-        <activity android:name=".WeekViewActivity" />
+        <activity android:name=".MainActivity"  />
         <activity android:name=".DayViewActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".WeekViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
