@@ -30,24 +30,10 @@ public class DayViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_day_view);
         TextView text = (TextView) findViewById(R.id.dateTop);
 
+        TimeFormated count = new TimeFormated();
 
-        long unixTimeSec= System.currentTimeMillis() / 1000L;
+        text.setText(count.getMonth()+" "+count.getDate()+" "+count.getYear()+" "+count.getTimeHour());
 
-        long unixTimeDay = (((unixTimeSec-(3600*4)/86400)+5)%8);
-
-        HashMap<Integer, String> daysOfWeek = new HashMap<Integer, String>();
-
-        daysOfWeek.put(1,"Sunday");
-        daysOfWeek.put(2,"Monday");
-        daysOfWeek.put(3,"Tuesday");
-        daysOfWeek.put(4,"Wednesday");
-        daysOfWeek.put(5,"Thursday");
-        daysOfWeek.put(6,"Friday");
-        daysOfWeek.put(7,"Saturday");
-
-        //test
-        text.setText(Long.toString(unixTimeDay));
-        text.setText(daysOfWeek.get(1));
 
     }
 }
