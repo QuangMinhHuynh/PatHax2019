@@ -92,7 +92,6 @@ public class AddEventActivity extends AppCompatActivity {
             f.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-            Log.i("FNF", "******* File not found. Did you add a WRITE_EXTERNAL_STORAGE permission to the   manifest?");
         } catch (IOException e) {
             e.printStackTrace();
         }
