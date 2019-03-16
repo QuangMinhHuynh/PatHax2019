@@ -1,7 +1,8 @@
 PatHax2019
+Aaron Woodhouse
+c++ file of tasking
 
-This is the submission for the Saint Pat Hackathon 2019
+Needs to be converted into Java for implementation
 
-Hello World
-(test branch)
-(aaron)
+is bash shell, run "make"
+if make doesn't need to be done, run the file with "./tasks"
