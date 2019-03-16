@@ -14,11 +14,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        Button dayViewBtn = findViewById(R.id.dayViewBtn);
-        Button weekViewBtn = findViewById(R.id.weekViewBtn);
-        Button monthViewBtn = findViewById(R.id.monthViewBtn);
-        Button scheduleViewBtn = findViewById(R.id.scheduleViewBtn);
-        Button tasksViewBtn = findViewById(R.id.tasksViewBtn);
+        Button dayViewBtn = (Button) findViewById(R.id.dayViewBtn);
+        Button weekViewBtn = (Button) findViewById(R.id.weekViewBtn);
+        Button monthViewBtn = (Button) findViewById(R.id.monthViewBtn);
+        Button scheduleViewBtn = (Button) findViewById(R.id.scheduleViewBtn);
+        Button tasksViewBtn = (Button) findViewById(R.id.tasksViewBtn);
 
         dayViewBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
