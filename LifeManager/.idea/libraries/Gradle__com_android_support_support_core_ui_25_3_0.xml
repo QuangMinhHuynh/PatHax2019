@@ -1,0 +1,22 @@
+<component name="libraryTable">
+<<<<<<< Updated upstream:LifeManager/.idea/libraries/Gradle__com_android_support_support_core_ui_25_3_0_aar.xml
+  <library name="Gradle: com.android.support:support-core-ui:25.3.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.0.aar/fe99ef5cb9a163bb5437e84ff0df4d93/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.0.aar/fe99ef5cb9a163bb5437e84ff0df4d93/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.0.aar/fe99ef5cb9a163bb5437e84ff0df4d93/res" />
+=======
+  <library name="Gradle: com.android.support:support-core-ui-25.3.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.0.aar/0efe248e99debf251c7827dcd3e92728/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.0.aar/0efe248e99debf251c7827dcd3e92728/res" />
+>>>>>>> Stashed changes:LifeManager/.idea/libraries/Gradle__com_android_support_support_core_ui_25_3_0.xml
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/extras/android/m2repository/com/android/support/support-core-ui/25.3.0/support-core-ui-25.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

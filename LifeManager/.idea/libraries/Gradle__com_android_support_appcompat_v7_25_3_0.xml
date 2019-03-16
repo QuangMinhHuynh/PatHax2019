@@ -1,0 +1,22 @@
+<component name="libraryTable">
+<<<<<<< Updated upstream:LifeManager/.idea/libraries/Gradle__com_android_support_appcompat_v7_25_3_0_aar.xml
+  <library name="Gradle: com.android.support:appcompat-v7:25.3.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.0.aar/a51fe1101936e0eabb228065fd764015/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.0.aar/a51fe1101936e0eabb228065fd764015/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.0.aar/a51fe1101936e0eabb228065fd764015/res" />
+=======
+  <library name="Gradle: com.android.support:appcompat-v7-25.3.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.0.aar/742b33957f368eb30e7273ac2403eb2a/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.0.aar/742b33957f368eb30e7273ac2403eb2a/jars/classes.jar!/" />
+>>>>>>> Stashed changes:LifeManager/.idea/libraries/Gradle__com_android_support_appcompat_v7_25_3_0.xml
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/extras/android/m2repository/com/android/support/appcompat-v7/25.3.0/appcompat-v7-25.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

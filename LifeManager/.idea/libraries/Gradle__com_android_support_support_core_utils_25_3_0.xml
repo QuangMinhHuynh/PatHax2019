@@ -1,0 +1,22 @@
+<component name="libraryTable">
+<<<<<<< Updated upstream:LifeManager/.idea/libraries/Gradle__com_android_support_support_core_utils_25_3_0_aar.xml
+  <library name="Gradle: com.android.support:support-core-utils:25.3.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.0.aar/acf6aa6ceb7b4dde8d26a893a45a7a37/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.0.aar/acf6aa6ceb7b4dde8d26a893a45a7a37/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.0.aar/acf6aa6ceb7b4dde8d26a893a45a7a37/jars/classes.jar!/" />
+=======
+  <library name="Gradle: com.android.support:support-core-utils-25.3.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.0.aar/2ba83de7317a2d0941a40e1ba56f08a9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.0.aar/2ba83de7317a2d0941a40e1ba56f08a9/res" />
+>>>>>>> Stashed changes:LifeManager/.idea/libraries/Gradle__com_android_support_support_core_utils_25_3_0.xml
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/extras/android/m2repository/com/android/support/support-core-utils/25.3.0/support-core-utils-25.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

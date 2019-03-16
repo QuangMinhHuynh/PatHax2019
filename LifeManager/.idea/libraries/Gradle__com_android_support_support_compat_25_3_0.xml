@@ -1,0 +1,22 @@
+<component name="libraryTable">
+<<<<<<< Updated upstream:LifeManager/.idea/libraries/Gradle__com_android_support_support_compat_25_3_0_aar.xml
+  <library name="Gradle: com.android.support:support-compat:25.3.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.0.aar/2ed63e3db5368d080825deaba62c3ab8/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.0.aar/2ed63e3db5368d080825deaba62c3ab8/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.0.aar/2ed63e3db5368d080825deaba62c3ab8/jars/classes.jar!/" />
+=======
+  <library name="Gradle: com.android.support:support-compat-25.3.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.0.aar/7ab2b0b9b07e6e5791a4807e1065a01a/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.0.aar/7ab2b0b9b07e6e5791a4807e1065a01a/res" />
+>>>>>>> Stashed changes:LifeManager/.idea/libraries/Gradle__com_android_support_support_compat_25_3_0.xml
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/AppData/Local/Android/Sdk/extras/android/m2repository/com/android/support/support-compat/25.3.0/support-compat-25.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
